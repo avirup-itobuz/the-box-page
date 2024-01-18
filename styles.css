@@ -462,22 +462,29 @@ a:hover {
   font-weight: 700;
   margin: 100px 0px 50px 100px;
 }
-
-.projects-left > h3 {
+.left-options {
+  display: flex;
+  overflow: scroll;
+  margin-left: 30px;
+}
+.left-options::-webkit-scrollbar{
+  display: none;
+}
+.left-options > h3 {
   color: #c2c7d6;
   font-size: 24px;
   font-weight: 500;
-  margin: 10px 0px 20px 100px;
+  margin: 20px 20px 20px 20px;
 }
 
-.projects-left > h3:hover {
+.left-options > h3:hover {
   font-size: 24px;
   font-weight: 500;
-  margin: 10px 0px 20px 100px;
+  margin: 10px 10px 20px 10px;
   color: #2947a9;
   font-weight: bold;
   cursor: pointer;
-  border-left: 5px solid #2947a9;
+  border-bottom: 5px solid #2947a9;
   padding-left: 12px;
 }
 
@@ -975,6 +982,25 @@ button:hover {
 }
 
 @media screen and (min-width: 850px) {
+  .left-options {
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  .left-options > h3 {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .left-options > h3:hover {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 10px 20px 10px;
+    color: #2947a9;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 0px;
+    border-left: 5px solid #2947a9;
+    padding-left: 12px;
+  }
   .small {
     display: none;
   }
@@ -985,6 +1011,9 @@ button:hover {
 
   .projects {
     flex-direction: row;
+  }
+  .projects-right-top {
+    padding-top: 186px;
   }
 
   .hidden {
