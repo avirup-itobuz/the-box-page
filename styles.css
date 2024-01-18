@@ -288,12 +288,13 @@ a:hover {
   height: auto;
   background-color: #2947a9;
   border-radius: 5px;
-  padding: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
 }
 
 .about-us-box-heading {
   color: white;
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 700;
   line-height: normal;
   padding: 30px 0 10px 0px;
@@ -313,7 +314,7 @@ a:hover {
   height: auto;
   width: auto;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
   background: white;
   border: 0px;
   display: flex;
@@ -324,7 +325,7 @@ a:hover {
 }
 
 .about-us-button > h3 {
-  padding: 16px 20px;
+  padding: 10px 15px;
   color: #2947a9;
 }
 
@@ -856,6 +857,18 @@ button:hover {
 }
 
 @media screen and (min-width: 455px) {
+  .about-us-box {
+    padding: 30px;
+  }
+  .about-us-box-heading {
+    font-size: 36px;
+  }
+  .about-us-button {
+    font-size: 16px;
+  }
+  .about-us-button > h3 {
+    padding: 16px 20px;
+  }
   .project-img > img {
     width: 300px;
     height: 200px;
