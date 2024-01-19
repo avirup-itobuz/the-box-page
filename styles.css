@@ -1032,7 +1032,10 @@ button:hover {
   }
 
   ul li {
-    float: left;
+    /* float: left; */
+  }
+  ul{
+    display: flex;
   }
 }
 
